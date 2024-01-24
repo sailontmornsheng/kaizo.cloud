@@ -76,9 +76,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll,handleContactScroll, isBlo
                   )}
                   {showResume && (
                     <Button
-                      onClick={() =>
-                        window.open("mailto:hello@kaizo.cloud")
-                      }
+                    onClick={() => router.push("/resume")}
                     >
                       Resume
                     </Button>
@@ -99,14 +97,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll,handleContactScroll, isBlo
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
+                  {/* {showResume && (
                     <Button
                       onClick={() => router.push("/resume")}
                       classes="first:ml-1"
                     >
                       Resume
                     </Button>
-                  )}
+                  )} */}
 
                   {/* <Button
                     onClick={handleContactScroll}
@@ -166,14 +164,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll,handleContactScroll, isBlo
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
-            {showResume && (
+            {/* {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
               </Button>
-            )}
+            )} */}
 
             {/* <Button onClick={handleContactScroll}>
               Contact
